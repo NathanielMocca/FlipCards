@@ -18,6 +18,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)touchCard:(UIButton *)sender {
+    if([sender.currentTitle length]){
+        UIImage *cardImage = [UIImage imageNamed:@"cardback"];
+        [sender setBackgroundImage:cardImage forState: UIControlStateNormal];
+        [sender setTitle:@"" forState: UIControlStateNormal];
+    }else{
+        UIImage *cardImage = [UIImage imageNamed:@"cardfront"];
+        [sender setBackgroundImage:cardImage forState: UIControlStateNormal];
+        [sender setTitle:@"3♠️" forState: UIControlStateNormal];
+    }
+   
+}
 
 
 - (void)didReceiveMemoryWarning {
