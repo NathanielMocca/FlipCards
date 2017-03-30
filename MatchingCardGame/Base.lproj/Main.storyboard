@@ -188,10 +188,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whv-x7-M3a">
+                                <rect key="frame" x="148" y="549" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="flip All" backgroundImage="cardfront">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchFlipAllButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1Q-7t-6Ab"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="flipAllButton" destination="whv-x7-M3a" id="SF8-y5-Ivp"/>
                         <outlet property="scoreLabel" destination="VuD-fR-v6Z" id="TIJ-BS-ckM"/>
                         <outletCollection property="cardButtons" destination="Ds2-Sy-uRu" id="peo-3D-sF6"/>
                         <outletCollection property="cardButtons" destination="Ix6-hv-hJE" id="LVj-ot-zQK"/>
@@ -218,5 +230,6 @@
     </scenes>
     <resources>
         <image name="cardback" width="64" height="96"/>
+        <image name="cardfront" width="64" height="96"/>
     </resources>
 </document>

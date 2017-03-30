@@ -15,6 +15,8 @@
 @property (strong,nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (nonatomic) BOOL isflipAll;
+@property (weak, nonatomic) IBOutlet UIButton *flipAllButton;
 
 @end
 
@@ -60,6 +62,27 @@
 
 -(UIImage *)backgroundImageForCard:(Card *)card{
     return [UIImage imageNamed:card.isChosen ? @"cardfront" : @"cardback"];
+}
+- (IBAction)touchFlipAllButton:(id)sender {
+    if(self.isflipAll){
+        for (UIButton *cardButton in self.cardButtons){
+            [cardButton setTitle:@"" forState:UIControlStateNormal];
+            [cardButton setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
+        }
+        self.isflipAll = NO;
+    }else{
+        for (UIButton *cardButton in self.cardButtons){
+            NSUInteger cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
+            Card *card = [self.game cardAtIndex:cardButtonIndex];
+            if([card.contents containsString:@"♥️"] || [card.contents containsString:@"♦️"]){
+                [cardButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            }
+            [cardButton setTitle:card.contents forState:UIControlStateNormal];
+            [cardButton setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+        }
+        self.isflipAll = YES;
+
+    }
 }
 
 - (void)viewDidLoad {
