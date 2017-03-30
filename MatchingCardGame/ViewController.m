@@ -45,6 +45,9 @@
         Card *card = [self.game cardAtIndex:cardButtonIndex];
         
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
+        if([card.contents containsString:@"♥️"] || [card.contents containsString:@"♦️"]){
+            [cardButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        }
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
         self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
