@@ -12,6 +12,9 @@
 		1F8A7BBB1E8C0C950088EDCC /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A7BBA1E8C0C950088EDCC /* PlayingCard.m */; };
 		1F8A7BBE1E8C102B0088EDCC /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A7BBD1E8C102B0088EDCC /* PlayingCardDeck.m */; };
 		1F8A7BC11E8CA3690088EDCC /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A7BC01E8CA3690088EDCC /* CardMatchingGame.m */; };
+		1FA973C71E8E2D2C00F2E793 /* UnoCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA973C61E8E2D2C00F2E793 /* UnoCard.m */; };
+		1FA973CA1E8E2DFB00F2E793 /* UnoCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA973C91E8E2DFB00F2E793 /* UnoCardDeck.m */; };
+		1FA973CD1E8E2FE900F2E793 /* UnoCardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA973CC1E8E2FE900F2E793 /* UnoCardMatchingGame.m */; };
 		1FC6CFB31E87528500D2E63D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6CFB21E87528500D2E63D /* main.m */; };
 		1FC6CFB61E87528500D2E63D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6CFB51E87528500D2E63D /* AppDelegate.m */; };
 		1FC6CFB91E87528500D2E63D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6CFB81E87528500D2E63D /* ViewController.m */; };
@@ -51,6 +54,12 @@
 		1F8A7BBD1E8C102B0088EDCC /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		1F8A7BBF1E8CA3690088EDCC /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		1F8A7BC01E8CA3690088EDCC /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		1FA973C51E8E2D2C00F2E793 /* UnoCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnoCard.h; sourceTree = "<group>"; };
+		1FA973C61E8E2D2C00F2E793 /* UnoCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnoCard.m; sourceTree = "<group>"; };
+		1FA973C81E8E2DFB00F2E793 /* UnoCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnoCardDeck.h; sourceTree = "<group>"; };
+		1FA973C91E8E2DFB00F2E793 /* UnoCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnoCardDeck.m; sourceTree = "<group>"; };
+		1FA973CB1E8E2FE900F2E793 /* UnoCardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnoCardMatchingGame.h; sourceTree = "<group>"; };
+		1FA973CC1E8E2FE900F2E793 /* UnoCardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnoCardMatchingGame.m; sourceTree = "<group>"; };
 		1FC6CFAE1E87528500D2E63D /* MatchingCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC6CFB21E87528500D2E63D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FC6CFB41E87528500D2E63D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,12 +136,18 @@
 				1F8A7BB41E8BF5620088EDCC /* Card.m */,
 				1F8A7BB91E8C0C950088EDCC /* PlayingCard.h */,
 				1F8A7BBA1E8C0C950088EDCC /* PlayingCard.m */,
+				1FA973C51E8E2D2C00F2E793 /* UnoCard.h */,
+				1FA973C61E8E2D2C00F2E793 /* UnoCard.m */,
 				1F8A7BB61E8BF6B30088EDCC /* Deck.h */,
 				1F8A7BB71E8BF6B30088EDCC /* Deck.m */,
 				1F8A7BBC1E8C102B0088EDCC /* PlayingCardDeck.h */,
 				1F8A7BBD1E8C102B0088EDCC /* PlayingCardDeck.m */,
+				1FA973C81E8E2DFB00F2E793 /* UnoCardDeck.h */,
+				1FA973C91E8E2DFB00F2E793 /* UnoCardDeck.m */,
 				1F8A7BBF1E8CA3690088EDCC /* CardMatchingGame.h */,
 				1F8A7BC01E8CA3690088EDCC /* CardMatchingGame.m */,
+				1FA973CB1E8E2FE900F2E793 /* UnoCardMatchingGame.h */,
+				1FA973CC1E8E2FE900F2E793 /* UnoCardMatchingGame.m */,
 				1FC6CFC01E87528500D2E63D /* Assets.xcassets */,
 				1FC6CFC21E87528500D2E63D /* LaunchScreen.storyboard */,
 				1FC6CFC51E87528500D2E63D /* Info.plist */,
@@ -305,10 +320,13 @@
 				1F8A7BBE1E8C102B0088EDCC /* PlayingCardDeck.m in Sources */,
 				1FC6CFBF1E87528500D2E63D /* MatchingCardGame.xcdatamodeld in Sources */,
 				1F8A7BC11E8CA3690088EDCC /* CardMatchingGame.m in Sources */,
+				1FA973CA1E8E2DFB00F2E793 /* UnoCardDeck.m in Sources */,
 				1F8A7BBB1E8C0C950088EDCC /* PlayingCard.m in Sources */,
 				1FC6CFB91E87528500D2E63D /* ViewController.m in Sources */,
 				1FC6CFB61E87528500D2E63D /* AppDelegate.m in Sources */,
 				1F8A7BB81E8BF6B30088EDCC /* Deck.m in Sources */,
+				1FA973CD1E8E2FE900F2E793 /* UnoCardMatchingGame.m in Sources */,
+				1FA973C71E8E2D2C00F2E793 /* UnoCard.m in Sources */,
 				1FC6CFB31E87528500D2E63D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
